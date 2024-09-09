@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header class="main-header">
@@ -37,46 +38,55 @@
     
                     <div class="form">
                         <label for="alas">Alas</label>
-                        <input id="alas" type="number">
+                        <input id="alas" type="number" name="alas">
                     </div>
                     <div class="form">
                         <label for="tinggi">Tinggi</label>
-                        <input id="tinggi" type="number">
+                        <input id="tinggi" type="number" name="tinggi">
                     </div>
-    
-                    <p id="result">Luas Segitiga : </p>
-    
-                    <button style="position: static;">HITUNG</button>
+                    <div class="form">
+                        <label for="hasil">Hasil</label>
+                        <input id="hasil" type="number" name="hasil">
+                    </div>
+                    
+                    <button type="button" onclick="hitung()">Hitung</button>
+                    
+                    
                 </form>
             </aside>
              
             <aside>
                 <header class="luas-segitiga-header">
-                    <h1>Luas Segitiga</h1>
+                    <h1>Keliling Segitiga</h1>
                 </header>
     
                 <article class="luas-segitiga-content">
-                    <p>Rumus Luas Segitiga : </p>
-                    <div class="luas-segitiga-img"></div>
+                    <p>Rumus Keliling Segitiga : </p>
+                    <div class="keliling-segitiga-img"></div>
                 </article>
     
-                <form action="">
+                <form>
                     <header>
-                        <h1>Hitung Luas Segitiga</h1>
+                        <h1>Hitung Keliling Segitiga</h1>
                     </header>
-    
                     <div class="form">
-                        <label for="alas">Alas</label>
-                        <input id="alas" type="number">
+                        <label for="sisiA">Sisi A</label>
+                        <input id="sisiA" type="number" name="sisiA" required>
                     </div>
                     <div class="form">
-                        <label for="tinggi">Tinggi</label>
-                        <input id="tinggi" type="number">
+                        <label for="sisiB">Sisi B</label>
+                        <input id="sisiB" type="number" name="sisiB" required>
                     </div>
-    
-                    <p id="result">Luas Segitiga : </p>
-    
-                    <button>HITUNG</button>
+                    <div class="form">
+                        <label for="sisiC">Sisi C</label>
+                        <input id="sisiC" type="number" name="sisiC" required>
+                    </div>
+                    <div class="form">
+                        <label for="hasil-keliling">Hasil Keliling</label>
+                        <input id="hasil-keliling" type="number" name="hasil-keliling" readonly>
+                    </div>
+
+                    <button type="button" onclick="hitungKeliling()">Hitung</button>
                 </form>
             </aside>
         </section>

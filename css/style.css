@@ -45,15 +45,25 @@ header, p {
     align-self: center;
 }
 
+.keliling-segitiga-img {
+    height: 300px;
+    width: 300px;
+    border: 1px solid;
+    background-image: url(https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/01/15/1853786887.jpg);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
 .form {
     width: 50%;
-    display: flex;
+    display: grid;
     justify-content: space-between;
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
 .form input {
-    width: 60%;
+    width: 80%;
 }
 
 input[type=number] {
